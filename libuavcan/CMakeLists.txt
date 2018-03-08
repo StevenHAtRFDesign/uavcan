@@ -34,7 +34,7 @@ endif ()
 # Probably output files should be saved into CMake output dir?
 #
 execute_process(COMMAND ${PYTHON} setup.py build WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/dsdl_compiler OUTPUT_QUIET)
-set(DSDLC_INPUTS "test/dsdl_test/root_ns_a" "test/dsdl_test/root_ns_b" "${CMAKE_CURRENT_SOURCE_DIR}/../dsdl/uavcan")
+set(DSDLC_INPUTS "test/dsdl_test/root_ns_a" "test/dsdl_test/root_ns_b" "${CMAKE_CURRENT_SOURCE_DIR}/../dsdl/uavcan" "${CMAKE_CURRENT_SOURCE_DIR}/../dsdl/rfd")
 set(DSDLC_OUTPUT "include/dsdlc_generated")
 
 set(DSDLC_INPUT_FILES "")
